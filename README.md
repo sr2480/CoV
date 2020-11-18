@@ -9,7 +9,7 @@ The 'CoV' package calculates the coefficient of variance of a specific variable/
 
 **How to Install the Package**
 
-To install 'CoV' use the function install("sr2480/CoV").
+To install 'CoV' use the function install_github("sr2480/CoV").
 
 **Example Usage**
 
