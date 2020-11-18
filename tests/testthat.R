@@ -1,6 +1,8 @@
 library(testthat)
 library(CoV)
 
+#Testing the function CoV...
+
 test_that("CoV", {
   expect_lt(my_function(b), 1000)
   expect_type(my_function(b), "double")
