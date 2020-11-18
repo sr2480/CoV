@@ -15,19 +15,21 @@ knitr::opts_chunk$set(
 
 # CoV
 
-<!-- badges: start -->
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![CRAN status](https://www.r-pkg.org/badges/version/CoV)](https://CRAN.R-project.org/package=CoV)
-<!-- badges: end -->
+This is my first repository on GitHub!
 
-The goal of CoV is to ...
+This repository specifically contains the metadata for my own package called 'CoV'.
+
+## Package Description
+
+The 'CoV' package calculates the coefficient of variance of a specific variable/column. It calculates the CoV by first calculating the standard deviation and mean using sd() and mean(), then multiplying the value by 100
 
 ## Installation
 
-You can install the released version of CoV from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of CoV from GitHub with:
 
 ``` r
-install.packages("CoV")
+install_packages_github("sr2480/CoV")
+load_all()
 ```
 
 ## Example
@@ -36,21 +38,11 @@ This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
 library(CoV)
-## basic example code
+
+CoV(c(-200:-1, NA))
+
+OR
+
+CoV(sample(x=1:1000, size=20))
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
