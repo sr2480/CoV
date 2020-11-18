@@ -1,0 +1,37 @@
+---
+title: "introduction"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{introduction}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+Demonstrating the use of the function "CoV"
+```{r}
+#Install the required packages
+install.packages("devtools")
+library(devtools)
+install.packages("testthat")
+library(testthat)
+install.packages("roxygen2")
+library(roxygen2)
+
+#Install the CoV package from github
+install_github("sr2480/CoV")
+
+#Create a sample dataset (or two)
+a <- sample(x=1:1000, size=20) #This code generates a random data sample with 20 observations between 1 and 1000
+b <- (c(-200:-1, NA)) #This code has NA to test how the function handles NAs
+
+#Use the CoV function from the CoV package on the created datasets
+CoV::CoV(a, verbose = TRUE)
+CoV::CoV(b, verbose = TRUE)
+```

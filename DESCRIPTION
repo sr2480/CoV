@@ -9,8 +9,15 @@ Authors@R:
 Description: The 'CoV' package calculates the coefficient of variance of a specific variable/column. It calculates the CoV by first calculating the standard deviation and mean using sd() and mean(), then multiplying the value by 100.
 License: MIT + file LICENSE
 Suggests: 
-    testthat
+    testthat,
+    knitr,
+    rmarkdown
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+Imports: 
+    tidyverse,
+    devtools,
+    roxygen2

@@ -25,10 +25,20 @@ The 'CoV' package calculates the coefficient of variance of a specific variable/
 
 ## Installation
 
+You will first need to install and load the following packages
+``` r
+install.packages("devtools")
+library(devtools)
+install.packages("testthat")
+library(testthat)
+install.packages("roxygen2")
+library(roxygen2)
+```
+
 You can install the released version of CoV from GitHub with:
 
 ``` r
-install_packages_github("sr2480/CoV")
+install_github("sr2480/CoV")
 load_all()
 ```
 
@@ -40,8 +50,6 @@ This is a basic example which shows you how to solve a common problem:
 library(CoV)
 
 CoV(c(-200:-1, NA))
-
-OR
 
 CoV(sample(x=1:1000, size=20))
 ```

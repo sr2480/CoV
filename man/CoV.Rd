@@ -16,8 +16,7 @@ CoV(x, na.rm = TRUE, verbose = TRUE)
 \value{
 A vector containing the coefficient of variance
 }
-\description{
-CoV
+\description{ The 'CoV' package calculates the coefficient of variance of a specific variable/column. It calculates the CoV by first calculating the standard deviation and mean using sd() and mean(), then multiplying the value by 100.
 }
 \examples{
 CoV(1:5)
