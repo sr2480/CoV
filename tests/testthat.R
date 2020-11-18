@@ -7,3 +7,4 @@ test_that("CoV", {
   expect_message(my_function(b),"calculating mean")
   expect_message(my_function(b),"calculating standard deviation")
   expect_message(my_function(b),"calculating the coefficient of variance")
+})
